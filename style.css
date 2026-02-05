@@ -75,6 +75,31 @@ section h2 {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
 }
+<!-- PROJECTS -->
+<section>
+  <h2>Projects</h2>
+
+  <div class="projects">
+    <div class="project-card">
+      <h3>Personal Brand Website</h3>
+      <p>
+        A modern personal website built using HTML, CSS, and GitHub Pages.
+        Designed to showcase services and capture leads.
+      </p>
+      <a href="https://herlsondigital.github.io" target="_blank">View Project →</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Landing Page (Sample)</h3>
+      <p>
+        Clean landing page focused on conversions and clear call-to-action.
+        Built using free tools and AI assistance.
+      </p>
+      <span>Demo available on request</span>
+    </div>
+  </div>
+</section>
+
 
 .services li {
   background: white;
