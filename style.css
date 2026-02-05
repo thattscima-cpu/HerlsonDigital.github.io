@@ -1,37 +1,102 @@
-body {
-  font-family: Arial, sans-serif;
+/* RESET & BASE */
+* {
+  box-sizing: border-box;
   margin: 0;
-  background: #f5f5f5;
-  color: #333;
+  padding: 0;
 }
 
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f4f6f9;
+  color: #1f2937;
+  line-height: 1.7;
+}
+
+/* HERO */
 header {
-  background: #0d6efd;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
   color: white;
-  padding: 60px 20px;
+  padding: 110px 20px;
   text-align: center;
 }
 
+header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.tagline {
+  margin-top: 15px;
+  font-size: 1.25rem;
+  opacity: 0.95;
+}
+
+/* BUTTONS */
 .btn {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 25px;
+  margin-top: 30px;
+  padding: 14px 36px;
+  border-radius: 999px;
   background: white;
-  color: #0d6efd;
+  color: #2563eb;
+  font-weight: 700;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+  transition: all 0.25s ease;
 }
 
-section {
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: auto;
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-footer {
-  background: #222;
+.btn.dark {
+  background: #2563eb;
   color: white;
-  text-align: center;
-  padding: 15px;
 }
+
+/* SECTIONS */
+section {
+  max-width: 980px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+/* SERVICES */
+.services {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.services li {
+  background: white;
+  padding: 22px;
+  border-radius: 16px;
+  font-weight: 600;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease;
+}
+
+.services li:hover {
+  transform: translateY(-6px);
+}
+
+/* CTA */
+.cta {
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+  padding: 70px 30px;
+  text-align: center;
+}
+
+/* CONTACT */
+#contact p {
